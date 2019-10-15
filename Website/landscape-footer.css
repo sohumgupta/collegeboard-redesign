@@ -1,0 +1,45 @@
+@media (orientation: landscape) {
+	#footer {
+		grid-row: 3;
+		background-color: gray;
+		color: white;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+		overflow: auto;
+		font-size: 2vh;
+		z-index: 1;
+	}
+
+	#left-text {
+		float: left;
+		padding: 0em 1em;
+		grid-column: 1;
+		text-align: left;
+	}
+
+	#right-text {
+		float: right;
+		padding: 0em 1em;
+		grid-column: 3;
+		text-align: right;
+	}
+
+	#socials {
+		grid-column: 2;
+		text-align: center;
+	}	
+
+	.soc {
+		background-color: var(--light-grey);
+		height: 0;
+		width: 0;
+		padding: 2vh;
+		margin: 0em .5vh;
+		display: inline-block;
+		border-radius: 5em;
+	}
+}

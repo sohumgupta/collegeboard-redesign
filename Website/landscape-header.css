@@ -1,0 +1,72 @@
+@media (orientation: landscape) {
+	#nav {
+		grid-row: 1;
+		background-color: var(--light-grey);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		border-bottom: 5px solid black;
+		display: grid;
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 1fr;
+		align-items: center;
+		overflow: auto;
+	}
+
+	#links {
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+		overflow: auto;
+	}
+
+	.link, .alink {
+		color: black;
+		text-decoration: none;
+		padding: 1em 1em;
+		font-size: 3vh;
+		font-weight: 700;
+	}
+
+	.link:hover {
+		background-color: #ccc;
+		color: black;
+	}
+
+	.alink {
+		background-color: #000;
+		color: var(--light-grey);
+	}
+
+	#l1 { grid-column: 1; }
+	#l2 { grid-column: 2; }
+	#l3 { grid-column: 3; }
+
+	#button {
+		grid-column: 3;
+		color: white;
+		border-radius: 10em;
+		padding: .5em 1em;
+		background-color: var(--blue);
+		font-size: 3vh;
+		margin: 0 .5em 0 auto;
+		text-align: right;
+	}
+	
+	#icon {
+		display: none;
+	}
+
+	#button:hover {
+		background-color: var(--dark-blue);
+	}
+
+	#logo {
+		grid-column: 1;	
+		width: 60%;
+		margin-left: 5%;
+	}
+}

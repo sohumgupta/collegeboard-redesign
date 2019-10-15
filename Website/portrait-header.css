@@ -1,0 +1,42 @@
+@media (orientation: portrait) {
+	#nav {
+		grid-row: 1;
+		background-color: var(--light-grey);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		border-bottom: 5px solid black;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+		overflow: auto;
+	}
+
+	#links {
+		display: none;
+	}
+
+	#button {
+		display: none;
+	}
+	
+	#icon {
+		grid-column: 2;
+		height: 60%;
+		float: right;
+		text-align: right;
+		justify-self: end;
+		margin-right: 10%;
+	}
+
+	#button:hover {
+		background-color: var(--dark-blue);
+	}
+
+	#logo {
+		grid-column: 1;	
+		width: 60%;
+		margin-left: 5%;
+	}
+}
